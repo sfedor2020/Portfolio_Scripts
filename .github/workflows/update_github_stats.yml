@@ -1,0 +1,46 @@
+name: Update GitHub Stats JSON
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Python script to update stats
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          python update_stats.py
+
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          if ! git diff --quiet ${{ env.OUTPUT_FILENAME }}; then
+            git add ${{ env.OUTPUT_FILENAME }}
+            git commit -m "Automated GitHub stats update" -m "Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            git push
+            echo "${{ env.OUTPUT_FILENAME }} was updated and pushed."
+          else
+            echo "No changes to ${{ env.OUTPUT_FILENAME }}. Nothing to commit."
+          fi
+        env:
+          OUTPUT_FILENAME: stats.json
