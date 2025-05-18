@@ -8,5 +8,6 @@
     "followers": 0,
     "following": 0,
     "totalStarsReceived": 0,
-    "dataFetchedAt": "2025-05-18T22:11:09.429010Z"
+    "dataFetchedAt": "2025-05-18T22:15:42.684793Z",
+    "errorFetching": "GraphQL ERR (main data): [{'type': 'VALIDATION', 'path': ['user', 'allTimeContributions'], 'locations': [{'line': 4, 'column': 13}], 'message': \"The total time spanned by 'from' and 'to' must not exceed 1 year\"}]"
 }
