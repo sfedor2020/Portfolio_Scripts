@@ -1,13 +1,13 @@
 {
     "username": "sfedor2020",
-    "totalContributionsAllTime": 0,
-    "totalContributionsLastYear": 0,
-    "totalRepositories": 0,
-    "publicRepositories": 0,
-    "privateRepositories": 0,
-    "followers": 0,
-    "following": 0,
-    "totalStarsReceived": 0,
-    "dataFetchedAt": "2025-05-18T22:15:42.684793Z",
-    "errorFetching": "GraphQL ERR (main data): [{'type': 'VALIDATION', 'path': ['user', 'allTimeContributions'], 'locations': [{'line': 4, 'column': 13}], 'message': \"The total time spanned by 'from' and 'to' must not exceed 1 year\"}]"
+    "totalContributionsAllTime": 1870,
+    "totalContributionsLastYear": 238,
+    "totalRepositories": 91,
+    "publicRepositories": 8,
+    "privateRepositories": 83,
+    "followers": 2,
+    "following": 8,
+    "totalStarsReceived": 2,
+    "dataFetchedAt": "2025-05-18T22:20:12.977995Z",
+    "errorFetching": null
 }
