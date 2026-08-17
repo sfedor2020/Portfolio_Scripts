@@ -1,13 +1,13 @@
 {
     "username": "sfedor2020",
-    "totalContributionsAllTime": 3867,
-    "totalContributionsLastYear": 1711,
-    "totalRepositories": 147,
-    "publicRepositories": 13,
-    "privateRepositories": 134,
-    "followers": 2,
-    "following": 9,
+    "totalContributionsAllTime": 0,
+    "totalContributionsLastYear": 0,
+    "totalRepositories": 0,
+    "publicRepositories": 0,
+    "privateRepositories": 0,
+    "followers": 0,
+    "following": 0,
     "totalStarsReceived": 0,
-    "dataFetchedAt": "2026-08-17T12:17:14.268579+00:00",
-    "errorFetching": null
+    "dataFetchedAt": "2026-08-17T18:19:03.358233+00:00",
+    "errorFetching": "HTTP error: 503 Server Error: Service Unavailable for url: https://api.github.com/graphql - Response: {\"message\": \"No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists.\"}\r\n"
 }
