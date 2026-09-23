@@ -1,13 +1,13 @@
 {
     "username": "sfedor2020",
-    "totalContributionsAllTime": 3931,
-    "totalContributionsLastYear": 1686,
-    "totalRepositories": 149,
-    "publicRepositories": 13,
-    "privateRepositories": 136,
-    "followers": 2,
-    "following": 9,
+    "totalContributionsAllTime": 0,
+    "totalContributionsLastYear": 0,
+    "totalRepositories": 0,
+    "publicRepositories": 0,
+    "privateRepositories": 0,
+    "followers": 0,
+    "following": 0,
     "totalStarsReceived": 0,
-    "dataFetchedAt": "2026-09-22T20:34:13.513063+00:00",
-    "errorFetching": null
+    "dataFetchedAt": "2026-09-23T02:05:44.976763+00:00",
+    "errorFetching": "HTTP error: 401 Client Error: Unauthorized for url: https://api.github.com/graphql - Response: {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}"
 }
